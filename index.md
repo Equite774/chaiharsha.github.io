@@ -1,6 +1,7 @@
 ---
 layout: full-width
 title: About
+nav_exclude: true
 ---
 
 # Ahoy there!
