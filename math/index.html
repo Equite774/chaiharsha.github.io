@@ -1,0 +1,21 @@
+---
+layout: full-width
+title: math
+# Note that this index page uses a full-width layout!
+---
+  <p class="intro"> My education in mathematics thus far has been rather lopsided. I have taken graduate-level real analysis, but have yet to touch abstract algebra (rest assured, I will be taking abstract my <i>senior spring</i>). I am fond of analysis, certainly for of its own beauty, but moreso because it provides the rigorous underpinnings to my favorite branch of math, probability. Back in high school, when I was taking virtual courses at <a href="https://artofproblemsolving.com/">The Art of Problem Solving</a>, it was the combinatorics and probability course that really spoke to me. Little did I know that this would end up being the area of math I would end up studying the most. Well, almost the most. </p> 
+  <p> The biggest surprise for me ended up being my love for statistics. Well, in particular, mathematical statistics. As it turns out, there is much more to statistics than taking <i>t</i>-tests. Who coulda thunk it? It was in Computational Probability and Statistics, learning about the Gibbs sampler, when I was first truly blown away by mathematics. It really felt like probability and statistics could allow you to do magical things, and I knew then that <i>I</i> needed to be the wizard. Since then, I have set about creating essentially a toolbox of statistical (and machine learning) methods for myself, such that I could have a nearly endless supply of tools with which to solve any given problem.</p>
+  <p> Within these posts, you will find some of my thoughts on some of these tools, on other math I find interesting, and other miscellaneous things I deem appropriate to fall under the category of mathematics.</p>
+
+
+  <h1 class="content-listing-header sans">Articles on Math</h1>
+  <ul class="content-listing ">
+    {% for post in site.posts %}      
+        <li class="listing">
+          <hr class="slender">
+          <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
+          <br><span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
+          <div>{{ post.excerpt }}</div> 
+        </li>
+    {% endfor %}
+  </ul>
