@@ -27,7 +27,7 @@ The only two economics courses I have taken are the intro course and Introductio
 
 Now, we reach linguistics. I have taken two courses, introductory linguistics, and Information Theory in Language, a seminar-type literature review course discussing information-theoretic pressures on language production. Linguistics has been fascinating to me for quite some time, and I am  -->
 
-At some point, I plan to delve into some of what I have taken personally. For now, however, we focus directly on the MATH, APMA, and CSCI. <br><br>
+At some point, I plan to delve into some of what I have taken personally outside of my degree. For now, however, we focus directly on the MATH, APMA, and CSCI. <br><br>
 
 ## My (Tech) Coursework
 
@@ -40,7 +40,7 @@ At some point, I plan to delve into some of what I have taken personally. For no
 
 While I could hardly say that I regret taking any of these courses, there is certainly much to be desired in the order I took these courses, and there are certainly some course variants I wish I had taken over others. A quick list:
 + **MATH 0350** as a course really just doesn't... work. It tries to be rigorous, but so much of the rigor requires some real analysis that it ends up being something like "we can't say that we can swap the order of integration for any given function, we need to show that Fubini's Theorem holds. When does Fubini's Theorem hold? Haha, that's a great question, and it's outside the scope of this class." Just take 0180 or 0200, and then take Real Analysis later if you're hung up on not knowing what Fubini's Theorem is.
-+ **CSCI 0150** (cs15) is a great class, and I do not regret taking it as my introduction to computer science. However, I do wish that I had taken CSCI 0170 (cs17) intead. Given the type of person I am and the type of coding that I will be doing, I do feel that it would have been a slightly better introduction for me. Though, as Andy van Dam nears retirement, I do believe that cs15 will not be offered anymore.
++ **CSCI 0150** (cs15) is a great class, and I do not regret taking it as my introduction to computer science. However, I do wish that I had taken CSCI 0170 (cs17) intead. Given the type of person I am and the type of coding that I will be doing, I do feel that it would have been a slightly better introduction for me. Though, as Andy van Dam nears retirement, I do believe that cs15 will be dropped from the offerings in the near future.
 + **CSCI 1420** requires a much stronger mathematical background than is assumed by the class, and to some degree this is understandable, as it is a CSCI course and not an APMA course, but it involves a great deal of probability and information theory that is not learned in APMA 1650.
 + Speaking of information theory, I should not have waited until senior year to take **APMA 1710**. Frankly, it should be taken right after APMA 1650. Having not taken it, information theory shows up in just so many different places that it really feels important to have an intuitive grasp of it, and while I have definitely learned content from information theory before and am confident that I can apply it, I don't really have as good of an intuition around it as I would like.
 
@@ -63,12 +63,12 @@ Let me discuss the rationale behind some of these choices.
 
 - As previously discussed, replace MATH 0350 with **MATH 0180** and CSCI 0150 with **CSCI 0170**.
 - I am abivalent between APMA 1650 and APMA 1655 when I had the opportunity to choose, as my section of 1650 covered slightly more content, such as MLE. However, **APMA 1655** is the new requirement.
-- Likewise, **APMA 0355** and **APMA 0365** are new prerequisites, as is $$CSCI 0410$$.
+- Likewise, **APMA 0355** and **APMA 0365** are new prerequisites, as is **CSCI 0410**.
 - **APMA 1710** early will provide quite a bit of motivation for categorical cross-entropy, which made no sense to me as a term when it showed up in CSCI 1420 and CSCI 1470.
 - The pathway of **APMA 1200** -> **APMA 1690** -> **APMA 1740** makes a lot of sense to me. APMA 1200 builds up Markov chains, 1690 provides some necessary review and a major application of Markov chains, while introducing Gibbs sampling, which then gets expanded on in 1740, along with a number of other statistical methods.
-- I did not take **APMA 1660**, and I have no plans to do so, as I think there were more intersting courses to take, and most of 1660's content can be learned independently. This is still probably true, but because I am not considering other courses offered in a given semester, I have included it on this list.
+- I did not take **APMA 1660**, and I have no plans to do so, as I think there were more interesting courses to take, and most of 1660's content can be learned independently. This is still probably true, but because I am not considering other courses offered in a given semester, I have included it on this list.
 - As much as I would love APMA 1740 to precede CSCI 1420, it simply does not make sense to hold off on 1420 for so long. But a significant portion of the math required can be intuited in 1420 with an understanding of APMA 1710.
-- **APMA 2110** is a corequisite of **APMA 2630**. While the graduate probability courses have somewhat standardized curricula nationwide, if a given person has the opportunity to take it, they should. The altneratives include various graduate-level CSCI courses, which is what I plan to do instead. But from an APMA-perspective, I would contend that this is a better option.
+- **APMA 2110** is a corequisite of **APMA 2630**. While the graduate probability courses have somewhat standardized curricula nationwide, if a given person has the opportunity to take it, they should. The alteratives include various graduate-level CSCI courses, which is what I plan to do instead. But from an APMA-perspective, I would contend that this is a better option.
 - **CSCI 1010** should precede **CSCI 1520**, as knowing about time complexity and NP-hard problems becomes helpful when learning how some algorithms in practice can achieve better results. Additionally taking two topics at the same time in 1520 and **APMA 1740** also makes sense to me.
 - **DATA 1030** after **CSCI 1420** makes sense, as after you learn the machine learning methods and mathematics, you learn how to use them in a practical setting.
 - Some people consider **APMA 1690** to be a continuation of **APMA 1660**. In that case, it is worthwhile to be taking 1690 immediately after 1660.
