@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Scourge of the Seven Seas (And College Hill): ARRR!!!"
-date:   2025-06-28 13:46:10
+date:   2025-07-01 23:32:10
 categories: music
 ---
 {% newthought '"We are ARRR!!!"' %} we proclaim, at the onset of every concert, almost always located under Wayland Arch at Brown University. But what is ARRR!!! exactly?
