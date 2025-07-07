@@ -644,3 +644,11 @@ hr.slender {
   content: "\eae4";
 }
 /*-- End of Icomoon icon font section --*/
+
+mjx-container[display="true"] {
+  font-size: 1.4rem !important;  /* Matches the size of body text */
+  display: block;
+  margin: 2rem auto;  /* Adds vertical spacing */
+  text-align: center;
+  width: 100%;  /* Full width so Tufte doesn't squeeze it */
+}
