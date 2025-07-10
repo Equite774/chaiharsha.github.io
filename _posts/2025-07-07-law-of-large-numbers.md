@@ -14,15 +14,17 @@ Consider a set $$\Omega.$$ We call $$\Omega$$ a **sample space**. We wish to con
 
 2) $$\mathbb{P}(\Omega) = 1$$
 
-Let $$A_1,\ldots\subseteq\Omega.$$ Then...
+Let $$A_1,A_2\ldots\subseteq\Omega.$$ Then...
 
-3) $$\sum_{i=1}^\infty\mathbb{P}(A_i)\leq \mathbb{P}\left(\bigcup_{i=1}^\infty A_i\right)$$
+3) $$\mathbb{P}\left(\bigcup_{i=1}^\infty A_i\right)\leq\sum_{i=1}^\infty\mathbb{P}(A_i)$$
 
 4) $$A_i\cap A_j=\emptyset\,\forall\,i\neq j\implies\sum_{i=1}^\infty\mathbb{P}(A_i) = \mathbb{P}\left(\bigcup_{i=1}^\infty A_i\right)$$
 
-While this certainly seems reasonable, unfortunately, this is not possible. To see why, let us consider an example.
+While this certainly seems reasonable, unfortunately, this is not necessarily possible. To see why, let us consider an example.
 
-Take the probability function $$\mathbb{P}:[0,1]\to[0,1]$$ such that $$\mathbb{P}(E+r)=\mathbb{P}(E),$$ with $$r\in\mathbb{Q},$$ i.e. $$\mathbb{P}$$ is translational invariant for rationals. We have that $$\mathbb{P}([0,1])=1.$$
+Take the probability function $$\mathbb{P}:[0,1]\to[0,1].$$ such that $$\mathbb{P}(E+r)=\mathbb{P}(E),$$ with $$r\in\mathbb{Q},$$ i.e. $$\mathbb{P}$$ is translational invariant for rationals. Intuitively, this corresponds with the uniform distribution. We will show that, with the prior assumptions, the uniform distribution results in a disastrous contradiction.
+
+By property 1, we have that $$\mathbb{P}([0,1])=1.$$
 
 Now, define a relation $$\sim$$ such that $$x \sim y \iff x - y \in\mathbb{Q}.$$ We claim that $$\sim$$ is an equivalence relation. For $$x,y,z\in[0,1],$$
 
@@ -34,7 +36,7 @@ Now, define a relation $$\sim$$ such that $$x \sim y \iff x - y \in\mathbb{Q}.$$
 
 Since $$\sim$$ is an equivalence relation, we can construct disjoint equivalence classes $$\mathcal{E}_i$$ such that $$\mathcal{E}_i\cap \mathcal{E}_j\neq\emptyset\implies\mathcal{E}_i=\mathcal{E}_j.$$
 
-By the Axiom of Choice, select an element from each equivalence class $$e_i\in\mathcal{E}_i.$$ Call the set of these selections $$V.$$ Since each element of $$V$$ is in $$[0,1],$$ we necessarily have $$V\subseteq [0,1].$$ We also have, for every $$q\in\mathbb{Q}\cap(0,1),$$ that for all $$x\in V,\, x + q \notin V.$$
+Using the Axiom of Choice, select an element from each equivalence class $$e_i\in\mathcal{E}_i.$$ Call the set of these selections $$V.$$ Since each element of $$V$$ is in $$[0,1],$$ we necessarily have $$V\subseteq [0,1].$$ We also have, for every $$q\in\mathbb{Q}\cap(0,1),$$ that for all $$x\in V,\, x + q \notin V.$$
 
 Hence, define $$V_q = \{x + q \mod{1}:x\in V\}$$ for $$q\in\mathbb{Q}\cap(0,1).$$ We claim that each $$V_q$$ is pairwise disjoint. Suppose not, that $$V_r\cap V_s\neq\emptyset$$ for $$r \neq s.$$ Then, take $$y\in V_r\cap V_s.$$ Thus, $$y-s\mod 1\in V\land y-r\mod 1\in V.$$ We enforce that $$y - r\mod 1 \neq y-s\mod 1.$$ But then, we clearly have 
 
@@ -88,9 +90,11 @@ We introduce an algebra for its extension: the **$$\sigma$$-algebra**. A $$\sigm
 
 We say that $$\mathcal{M}$$ is a $$\sigma$$-algebra of $$\Omega$$ if all elements in $$\mathcal{M}$$ are subsets of $$\Omega$$ and $$\Omega\in\mathcal{M}.$$
 
-Now, we say that sets in $$\mathcal{M}$$ are, by definition, **measurable**. Hence, we may construct our probability measure, $$\mathbb{P},$$ such that we have $$\mathbb{P}(\Omega)=1,\,\mathbb{P}(\emptyset)=0,\,$$ for any $$X\in\mathcal{M},\mathbb{P}(A)\geq 0,$$ and for disjoint $$X_1,\ldots,\, \mathbb{P}\left(\bigcup_{i=1}^\infty X_i\right)=\sum_{i=1}^\infty \mathbb{P}(X_i).$$ Hence, we have a more rigorous definition of probability work with.
+Now, we say that sets in $$\mathcal{M}$$ are, by definition, **measurable**. Hence, we may construct our probability measure, $$\mathbb{P},$$ such that we have $$\mathbb{P}(\Omega)=1,\,\mathbb{P}(\emptyset)=0,\,$$ for any $$X\in\mathcal{M},\mathbb{P}(A)\geq 0,$$ and for disjoint $$X_1,X_2\ldots,\, \mathbb{P}\left(\bigcup_{i=1}^\infty X_i\right)=\sum_{i=1}^\infty \mathbb{P}(X_i).$$ Hence, we have a more rigorous definition of probability work with.
 
 We call the collection $$(\Omega,\mathcal{M},\mathbb{P})$$ a **probability space**, or a probability triple.
+
+*Note: I am ommitting the proof of existence of the probability measure. If you are interested, the keywords are outer measure and Carathéodory criterion.*
 
 ## Integration / Expected Value
 
